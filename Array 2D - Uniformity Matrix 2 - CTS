@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         {
+        Scanner sc=new Scanner(System.in);
+             int n=sc.nextInt();     
+            int [][]arr=new int [n][n];
+            for(int i=0;i<n;i++){
+                for(int j=0;j<n;j++)
+                {
+                    arr[i][j]=sc.nextInt();
+                }
+            }
+                int sum1=0,sum2=0;
+                    for(int i=0;i<n;i++){
+                        for(int j=0;j<n;j++){
+                            if(arr[i][j]%2==0){
+                            sum1++;
+                        }
+                            else{
+                                sum2++;
+                            }
+                        }
+                        
+                    }
+                    if(sum1==n*n){
+                        System.out.print("Yes");
+                    }
+                    else if(sum2==n*n){
+                        System.out.println("Yes");
+                    }
+                    else{
+                        System.out.print("No");
+                    }
+                    
+             
+
+    }
+}
+
+    }
